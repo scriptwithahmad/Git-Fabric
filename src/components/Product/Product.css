@@ -1,0 +1,30 @@
+.ProductImg {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  /* grid-template-columns: repeat(4, 1fr); */
+  gap: 40px;
+  padding: 0 12%;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+.ProductWrapper img {
+  width: 100%;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.35);
+  border-radius: 15px;
+  height: 170px;
+  object-fit: cover;
+  cursor: pointer;
+}
+.ProductInfo h3 {
+  text-align: center;
+  font-size: .9rem;
+  font-family: sans-serif;
+  text-transform: capitalize;
+  font-weight: 400;
+  color: #222;
+  margin-top: 0.8rem;
+  transition: 0.2s linear;
+}
+.ProductWrapper:hover h3 {
+  color: red;
+}

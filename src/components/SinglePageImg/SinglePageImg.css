@@ -1,0 +1,27 @@
+.SinglePageImg{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  /* grid-template-columns: repeat(4, 1fr); */
+  gap: 20px;
+  padding: 0 4%;
+  margin-bottom: 8rem;
+  margin-top: 2rem;
+}
+.pageWrapper #heroImg{
+  height: 80%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+.pageSmallImg{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.pageSmallImg img{
+  border-radius: 4px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
