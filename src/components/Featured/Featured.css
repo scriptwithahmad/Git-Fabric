@@ -1,0 +1,90 @@
+
+.Featured .Heading{
+    text-align: center;
+    padding: 12px 0;
+    color: #0a121e;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    animation-name: myMove;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+@keyframes myMove {
+    from {
+        color: rgba(0, 0, 255, 0.788);
+    }
+    to {
+        color: rgba(128, 0, 128, 0.616);
+    }
+  }
+.FeaturedCenter{
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    justify-content: center;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    gap: 20px;
+    padding: 0 4%;
+}
+.FeaturedCenter .FeaturedImg{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.FeaturedCenter .overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+}
+.FeaturedImg:hover .overlay{
+    background: linear-gradient(0deg, rgba(36, 0, 241, 0.658), transparent);
+}
+.FeaturedImg .content{
+    position: absolute;
+    top: 50%;
+    left: -20%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: .2s ease-in;
+}
+.FeaturedImg .content .myBtn{
+    color: #0a121e;
+    border: transparent;
+    padding: 12px 16px;
+    border-radius: 6px;
+    background: linear-gradient(45deg, rgba(0, 0, 255, 0.788), rgba(128, 0, 128, 0.616));
+    text-decoration: none;
+    color: white;
+    font-family: arial;
+    transition: .3s ease-in;
+}
+.FeaturedImg .content .myBtn:hover{
+    background: linear-gradient(0deg, rgba(0, 0, 255, 0.788), rgba(128, 0, 128, 0.616));
+    opacity: .9;
+    letter-spacing: 1px;
+}
+.FeaturedImg:hover .content{
+    left: 50%;
+    opacity: 1;
+}
+.FeaturedCenter .FeaturedImg img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: all .2s ease-in;
+}
+.FeaturedCenter .FeaturedImg:hover img{
+    transform: scale(1.06);
+}
+.FeaturedCenter .FeaturedImg:hover img{
+    opacity: .5;
+}

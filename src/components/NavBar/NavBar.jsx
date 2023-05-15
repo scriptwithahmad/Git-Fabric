@@ -40,10 +40,10 @@ function NavBar() {
               <Link className="link" to="/page"> Girls </Link>
             </li>
             <li>
-              <Link className="link" to="/page"> New </Link>
+              <Link className="link" to="/Features"> Features </Link>
             </li>
             <li>
-              <Link className="link" to="/page"> Fragrance </Link>
+              <Link className="link" to="/collection"> Collection </Link>
             </li>
             <li>
               <Link className="link" to="/page"> Sale </Link>
