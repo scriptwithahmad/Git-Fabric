@@ -4,7 +4,7 @@ import {
   Pagination,
   Scrollbar,
   A11y,
-  Mousewheel,
+  // Mousewheel,
   Autoplay,
 } from "swiper";
 
@@ -26,7 +26,7 @@ const Header = () => {
           Pagination,
           Scrollbar,
           A11y,
-          Mousewheel,
+          // Mousewheel,
           Autoplay,
         ]}
         spaceBetween={0}
@@ -35,7 +35,7 @@ const Header = () => {
         navigation
         pagination={{ clickable: true }}
         scrollbar={{ draggable: true }}
-        mousewheel={true}
+        // mousewheel={true}
         loop={true}
         autoplay={{ delay: 3000 }}
         // onSwiper={(swiper) => console.log(swiper)}

@@ -46,7 +46,7 @@ function NavBar() {
               <Link className="link" to="/collection"> Collection </Link>
             </li>
             <li>
-              <Link className="link" to="/page"> Sale </Link>
+              <Link className="link" to="/singlepage"> Sale </Link>
             </li>
           </ul>
         </div>
